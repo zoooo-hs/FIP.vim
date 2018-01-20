@@ -17,6 +17,10 @@ function! FipVimOpenWithPath(path)
 endfunction 
 ``` 
 
+## Sorry
+
+There is a problem with the preview function.
+
 ## Usage
 
 TODO: write usage
