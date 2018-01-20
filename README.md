@@ -45,5 +45,5 @@ Append the code in script file to .vimrc
 
 ```bash
 $ git clone https://github.com/DogFooter/FIP.vim.git
-$ cat FIP.vim/script >> $HOME/.vimrc
+$ cat FIP.vim/script.vim >> $HOME/.vimrc
 ```
