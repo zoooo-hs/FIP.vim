@@ -17,10 +17,6 @@ function! FipVimOpenWithPath(path)
 endfunction 
 ``` 
 
-## Sorry
-
-There is a problem with the preview function.
-
 ## Usage
 
 [![asciicast](https://asciinema.org/a/158262.png)](https://asciinema.org/a/158262)
