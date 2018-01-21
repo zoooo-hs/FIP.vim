@@ -4,7 +4,7 @@ This is project inspired by Jetbrain's 'Finder in Path' feature.
 
 ## Usage
 
-[![asciicast](https://asciinema.org/a/158315.png)](https://asciinema.org/a/158315)
+[![asciicast](https://asciinema.org/a/158327.png)](https://asciinema.org/a/158327)
 
 ## Requirements
 
