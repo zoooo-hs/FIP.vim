@@ -23,7 +23,7 @@ There is a problem with the preview function.
 
 ## Usage
 
-[![asciicast](https://asciinema.org/a/TevQfHtw9gMzzsJbpbTKPNh7s.png)](https://asciinema.org/a/TevQfHtw9gMzzsJbpbTKPNh7s)
+[![asciicast](https://asciinema.org/a/158262.png)](https://asciinema.org/a/158262)
 
 ## Requirements
 
