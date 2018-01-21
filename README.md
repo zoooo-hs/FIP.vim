@@ -2,10 +2,6 @@
 
 This is project inspired by Jetbrain's 'Finder in Path' feature.
 
-## Future Work
-
-Improving Preview (show right place, line number)
-
 ## Usage
 
 [![asciicast](https://asciinema.org/a/158315.png)](https://asciinema.org/a/158315)
@@ -33,3 +29,7 @@ Install plugin
 
 ## Reference 
 I referred to juengunn (https://github.com/junegunn) a lot.  
+
+## License
+
+MIT
