@@ -35,19 +35,4 @@ Theses requirements are not accurate.
 
 ## Installation
 
-Currently, only *MANUAL installation* is supported. (I'll improve it..)
-
-### Install in Manually
-
-Append the code in script file to .vimrc
-
-```bash
-$ git clone https://github.com/DogFooter/FIP.vim.git
-$ cat FIP.vim/script.vim >> $HOME/.vimrc
-
-# or
-
-$ git clone https://github.com/DogFooter/FIP.vim.git
-$ cd FIP.vim
-$ ./install.sh
-```
+Not supported

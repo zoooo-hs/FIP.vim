@@ -10,3 +10,5 @@ function! FipVimOpenWithPath(path)
     execute 'e '.s[0]
     execute ''.s[1]
 endfunction 
+
+command! FIP call FipVimRun()
