@@ -2,28 +2,13 @@
 
 This is project inspired by Jetbrain's 'Finder in Path' feature.
 
-```vim
-function! FipVimRun()
-    call fzf#run({
-                \  'source': 'grep -rni . --exclude=tags --exclude-dir={.svn,.git,storage,vendor,.idea} .',
-                \  'options': "--preview \"echo {} | cut -d ':' -f 1| xargs less\" --color light --delimiter : --nth 3",
-                \  'sink': function('FipVimOpenWithPath') })
-endfunction
-
-function! FipVimOpenWithPath(path)
-    let s = split(a:path, ":")
-    execute 'e '.s[0]
-    execute ''.s[1]
-endfunction 
-```
-
 ## Future Work
 
 Improving Preview (show right place, line number)
 
 ## Usage
 
-[![asciicast](https://asciinema.org/a/158262.png)](https://asciinema.org/a/158262)
+[![asciicast](https://asciinema.org/a/158315.png)](https://asciinema.org/a/158315)
 
 ## Requirements
 
@@ -35,4 +20,16 @@ Theses requirements are not accurate.
 
 ## Installation
 
-Not supported
+I usually use vim-plug (https://github.com/junegunn/vim-plug)
+
+Add this Line to the .vimrc
+```vim
+Plug 'dogfooter/FIP.vim'
+```
+Install plugin
+```vim
+:PlugInstall
+```
+
+## Reference 
+I referred to juengunn (https://github.com/junegunn) a lot.  
