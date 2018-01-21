@@ -23,9 +23,7 @@ There is a problem with the preview function.
 
 ## Usage
 
-TODO: write usage
-
-
+[![asciicast](https://asciinema.org/a/TevQfHtw9gMzzsJbpbTKPNh7s.png)](https://asciinema.org/a/TevQfHtw9gMzzsJbpbTKPNh7s)
 
 ## Requirements
 
