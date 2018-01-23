@@ -1,6 +1,8 @@
-# FIP.vim - Find In Path in VIM
+# FIP.vim - Find In Path with FZF.vim
 
 This is project inspired by Jetbrain's 'Finder in Path' feature.
+Thanks to FZF.vim, I could create it.
+(https://github.com/junegunn/fzf.vim)
 
 ## Usage
 
