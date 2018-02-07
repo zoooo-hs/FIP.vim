@@ -1,7 +1,7 @@
 let s:AwkScript = expand('<sfile>:h:h')."/bin/awk_stuff.sh"
 function! s:FipVimRun()
     call fzf#run({
-                \  'source': 'grep -rni . --exclude=tags exclude="*.swp" --exclude-dir={.svn,.git,storage,vendor,.idea} .',
+                \  'source': "grep -rni . --exclude=tags exclude='*.swp' --exclude-dir={.svn,.git,storage,vendor,.idea} .",
                 \  'options': "--preview \"echo {} |".s:AwkScript." \" --color light --delimiter : --nth 3..",
                 \  'sink': function('s:FipVimOpenWithPath') })
 endfunction
