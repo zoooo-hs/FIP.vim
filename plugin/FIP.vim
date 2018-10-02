@@ -12,4 +12,10 @@ function! s:FipVimOpenWithPath(path)
     execute ''.s[1]
 endfunction 
 
+function! s:FipVimOpenWithPathNewTab()
+    execute 'tabnew'
+    call s:FipVimRun()
+endfunction 
+
 command! FIP call s:FipVimRun()
+command! FIPT call s:FipVimOpenWithPathNewTab()
