@@ -8,7 +8,7 @@ Thanks to FZF.vim, I could create it.
 
 [![asciicast](https://asciinema.org/a/158327.png)](https://asciinema.org/a/158327)
 
-YouTube Viedeo (https://www.youtube.com/watch?v=tRww9qEV9Sw)
+YouTube Video (https://www.youtube.com/watch?v=tRww9qEV9Sw)
 
 ## Requirements
 
