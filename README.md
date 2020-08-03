@@ -10,6 +10,18 @@ Thanks to FZF.vim, I could create it.
 
 YouTube Video (https://www.youtube.com/watch?v=tRww9qEV9Sw)
 
+## Now Testing
+
+New function which can filter extension and directories.
+So now you can see only the files which has specific extension that you want. And also you can exclude some directories that you want to ignore.
+
+```vim
+FIF extension exclude_dir1 exclude_dir2 ...
+
+"eg)"
+FIF ts node_moudules lib packages
+```
+
 ## Requirements
 
 Theses requirements are not accurate.
