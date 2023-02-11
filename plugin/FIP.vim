@@ -6,6 +6,25 @@ function! s:FipVimRun()
                 \  'sink': function('s:FipVimOpenWithPath') })
 endfunction
 
+function! s:FipVimRunAndExcludes(...)
+    let excludes = ""
+    for exclude in a:000
+        let excludes.=",".exclude
+    endfor
+
+    call fzf#run({
+                \  'source': "grep -rni . --exclude=tags --exclude='*.swp' --exclude-dir={.svn,.git,storage,vendor,.idea".excludes."} .",
+                \  'options': "--preview \"echo {} |".s:AwkScript." \" --color light --delimiter : --nth 3..",
+                \  'sink': function('s:FipVimOpenWithPath') })
+endfunction
+
+function! s:FipVimRunInDir(path)
+    call fzf#run({
+                \  'source': "grep -rni . --exclude=tags --exclude='*.swp' ".a:path,
+                \  'options': "--preview \"echo {} |".s:AwkScript." \" --color light --delimiter : --nth 3..",
+                \  'sink': function('s:FipVimOpenWithPath') })
+endfunction
+
 function! s:FipVimOpenWithPath(path)
     let s = split(a:path, ":")
     execute 'e '.s[0]
@@ -38,7 +57,8 @@ function! s:FipVimRunFilter(extension, ...)
 
 endfunction 
 
-command! FIP call s:FipVimRun()
+command! -nargs=* FIP call s:FipVimRunAndExcludes(<f-args>)
+command! -nargs=* FIPD call s:FipVimRunInDir(<f-args>)
 " command! -nargs=* FIPE call s:FipVimRunExclude(<f-args>)
 command! -nargs=* FIF call s:FipVimRunFilter(<f-args>)
 command! FIPT call s:FipVimOpenWithPathNewTab()

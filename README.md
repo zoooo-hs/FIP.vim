@@ -10,16 +10,34 @@ Thanks to FZF.vim, I could create it.
 
 YouTube Video (https://www.youtube.com/watch?v=tRww9qEV9Sw)
 
-## Now Testing
+## Features
 
-New function which can filter extension and directories.
-So now you can see only the files which has specific extension that you want. And also you can exclude some directories that you want to ignore.
+### :FIP ...exclude_dirs
 
-```vim
-FIF extension exclude_dir1 exclude_dir2 ...
+Find In Path but not in "...exclude_dirs"
 
-"eg)"
-FIF ts node_moudules lib packages
+#### Parameters
+- ...exclude_dirs
+    - optional 
+    - directory path that you want to ignore
+
+```bash
+# ex)
+:FIP node_modules build
+```
+
+### :FIPD from_dir
+
+Find In Path from directory "from_dir"
+
+#### Parameters
+- from_dir
+    - required
+    - directory path where you want to do "FIND IN PATH" 
+
+```bash
+# ex)
+:FIPD src
 ```
 
 ## Requirements
