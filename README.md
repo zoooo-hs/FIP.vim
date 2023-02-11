@@ -54,7 +54,7 @@ I usually use vim-plug (https://github.com/junegunn/vim-plug)
 
 Add this Line to the .vimrc
 ```vim
-Plug 'dogfooter/FIP.vim'
+Plug 'zoooo-hs/FIP.vim'
 ```
 Install plugin
 ```vim
